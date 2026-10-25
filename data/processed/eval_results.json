@@ -1,0 +1,933 @@
+{
+  "k": 5,
+  "candidate_k": 20,
+  "time_filter": "int_range",
+  "n_events": 15,
+  "n_corpus_docs": 130,
+  "detected_events": 14,
+  "skipped_events": [],
+  "summary": {
+    "naive": {
+      "mrr": 0.06666666666666667,
+      "precision": 0.02666666666666667,
+      "recall": 0.06666666666666667,
+      "hit": 0.06666666666666667
+    },
+    "time_dense": {
+      "mrr": 0.6777777777777777,
+      "precision": 0.40000000000000013,
+      "recall": 1.0,
+      "hit": 1.0
+    },
+    "hybrid": {
+      "mrr": 0.5388888888888889,
+      "precision": 0.40000000000000013,
+      "recall": 1.0,
+      "hit": 1.0
+    },
+    "hybrid_rerank": {
+      "mrr": 0.7222222222222222,
+      "precision": 0.40000000000000013,
+      "recall": 1.0,
+      "hit": 1.0
+    }
+  },
+  "improvement": {
+    "mrr_abs_delta": 0.6555555555555556,
+    "mrr_rel_pct": 983.3333333333334,
+    "mrr_delta_ci95": [
+      0.5,
+      0.8
+    ],
+    "precision_abs_delta": 0.37333333333333346,
+    "precision_rel_pct": 1400.0000000000005,
+    "precision_delta_ci95": [
+      0.32000000000000006,
+      0.40000000000000013
+    ],
+    "recall_abs_delta": 0.9333333333333333,
+    "recall_rel_pct": 1400.0,
+    "recall_delta_ci95": [
+      0.8,
+      1.0
+    ],
+    "hit_abs_delta": 0.9333333333333333,
+    "hit_rel_pct": 1400.0,
+    "hit_delta_ci95": [
+      0.8,
+      1.0
+    ]
+  },
+  "per_event": [
+    {
+      "event_id": "NVDA-20230525",
+      "detected": true,
+      "z_score": 10.47,
+      "pct_change": 24.4,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-089",
+            "noise-079",
+            "noise-048",
+            "noise-033",
+            "noise-063"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "NVDA-20230525-sec",
+            "NVDA-20230525-news",
+            "noise-000",
+            "noise-015",
+            "noise-030"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "NVDA-20230525-sec",
+            "NVDA-20230525-news",
+            "noise-030",
+            "noise-000",
+            "noise-015"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "NVDA-20230525-sec",
+            "NVDA-20230525-news",
+            "noise-000",
+            "noise-015",
+            "noise-030"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "NVDA-20240523",
+      "detected": true,
+      "z_score": 3.39,
+      "pct_change": 9.3,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-089",
+            "noise-079",
+            "noise-032",
+            "noise-041",
+            "noise-054"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-001",
+            "NVDA-20240523-news",
+            "NVDA-20240523-sec",
+            "noise-084",
+            "noise-016"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-001",
+            "NVDA-20240523-sec",
+            "NVDA-20240523-news",
+            "noise-016",
+            "noise-084"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-001",
+            "NVDA-20240523-sec",
+            "NVDA-20240523-news",
+            "noise-084",
+            "noise-016"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "NVDA-20240829",
+      "detected": true,
+      "z_score": -3.59,
+      "pct_change": -6.4,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-089",
+            "noise-053",
+            "noise-077",
+            "noise-041",
+            "noise-032"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-032",
+            "NVDA-20240829-news",
+            "NVDA-20240829-sec",
+            "noise-002",
+            "noise-017"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-032",
+            "NVDA-20240829-sec",
+            "NVDA-20240829-news",
+            "noise-017",
+            "noise-002"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-032",
+            "NVDA-20240829-news",
+            "NVDA-20240829-sec",
+            "noise-017",
+            "noise-002"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "NVDA-20250127",
+      "detected": true,
+      "z_score": -9.85,
+      "pct_change": -17.0,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-089",
+            "noise-077",
+            "noise-053",
+            "noise-032",
+            "noise-041"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-033",
+            "NVDA-20250127-news",
+            "noise-018",
+            "noise-003",
+            "NVDA-20250127-ctx"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-033",
+            "noise-003",
+            "noise-018",
+            "NVDA-20250127-news",
+            "NVDA-20250127-ctx"
+          ],
+          "mrr": 0.25,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "NVDA-20250127-news",
+            "noise-033",
+            "NVDA-20250127-ctx",
+            "noise-003",
+            "noise-018"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "NVDA-20250416",
+      "detected": false,
+      "z_score": -2.43,
+      "pct_change": -6.9,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-089",
+            "noise-053",
+            "noise-077",
+            "noise-001",
+            "noise-032"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-019",
+            "noise-004",
+            "NVDA-20250416-news",
+            "noise-034",
+            "NVDA-20250416-sec"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-004",
+            "noise-019",
+            "NVDA-20250416-sec",
+            "noise-034",
+            "NVDA-20250416-news"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "NVDA-20250416-sec",
+            "noise-019",
+            "noise-004",
+            "noise-034",
+            "NVDA-20250416-news"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "AAPL-20230804",
+      "detected": true,
+      "z_score": -3.9,
+      "pct_change": -4.8,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-056",
+            "noise-006",
+            "noise-005",
+            "noise-090",
+            "noise-038"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-005",
+            "AAPL-20230804-sec",
+            "AAPL-20230804-news",
+            "noise-020"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-005",
+            "AAPL-20230804-sec",
+            "AAPL-20230804-news",
+            "noise-020"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-005",
+            "AAPL-20230804-sec",
+            "AAPL-20230804-news",
+            "noise-020"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "AAPL-20240503",
+      "detected": true,
+      "z_score": 4.38,
+      "pct_change": 6.0,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-038",
+            "noise-005",
+            "noise-006",
+            "noise-056",
+            "noise-069"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-006",
+            "AAPL-20240503-sec",
+            "AAPL-20240503-news",
+            "noise-021"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-006",
+            "AAPL-20240503-sec",
+            "AAPL-20240503-news",
+            "noise-021"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-006",
+            "AAPL-20240503-sec",
+            "AAPL-20240503-news",
+            "noise-021"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "AAPL-20240611",
+      "detected": true,
+      "z_score": 5.04,
+      "pct_change": 7.3,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-038",
+            "noise-056",
+            "noise-005",
+            "noise-006",
+            "noise-069"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "AAPL-20240611-news",
+            "noise-022",
+            "noise-007",
+            "AAPL-20240611-ctx"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-007",
+            "noise-022",
+            "AAPL-20240611-news",
+            "AAPL-20240611-ctx"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-022",
+            "AAPL-20240611-news",
+            "noise-007",
+            "AAPL-20240611-ctx"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "AAPL-20250403",
+      "detected": true,
+      "z_score": -7.51,
+      "pct_change": -9.2,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-056",
+            "noise-090",
+            "noise-005",
+            "noise-006",
+            "noise-038"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "AAPL-20250403-news",
+            "noise-008",
+            "noise-023",
+            "AAPL-20250403-ctx"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-008",
+            "AAPL-20250403-news",
+            "noise-023",
+            "AAPL-20250403-ctx"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "AAPL-20250403-news",
+            "noise-008",
+            "noise-023",
+            "AAPL-20250403-ctx"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "AAPL-20250409",
+      "detected": true,
+      "z_score": 7.9,
+      "pct_change": 15.3,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-038",
+            "noise-005",
+            "noise-006",
+            "noise-056",
+            "noise-069"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "AAPL-20250409-news",
+            "noise-009",
+            "noise-024",
+            "AAPL-20250409-ctx"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-024",
+            "noise-009",
+            "AAPL-20250409-news",
+            "AAPL-20250409-ctx"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "AAPL-20250409-news",
+            "noise-009",
+            "noise-024",
+            "AAPL-20250409-ctx"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "TSLA-20240424",
+      "detected": true,
+      "z_score": 3.89,
+      "pct_change": 12.1,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-085",
+            "noise-025",
+            "noise-050",
+            "noise-013",
+            "noise-028"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-025",
+            "TSLA-20240424-sec",
+            "TSLA-20240424-news",
+            "noise-010"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "TSLA-20240424-sec",
+            "noise-025",
+            "noise-010",
+            "TSLA-20240424-news"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-025",
+            "TSLA-20240424-sec",
+            "TSLA-20240424-news",
+            "noise-010"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "TSLA-20240724",
+      "detected": true,
+      "z_score": -4.99,
+      "pct_change": -12.3,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "TSLA-20250310-news",
+            "TSLA-20250310-ctx",
+            "noise-097",
+            "noise-085",
+            "noise-013"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "TSLA-20240724-sec",
+            "TSLA-20240724-news",
+            "noise-011",
+            "noise-026"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "TSLA-20240724-sec",
+            "noise-011",
+            "TSLA-20240724-news",
+            "noise-026"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "TSLA-20240724-sec",
+            "TSLA-20240724-news",
+            "noise-026",
+            "noise-011"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "TSLA-20241024",
+      "detected": true,
+      "z_score": 5.42,
+      "pct_change": 22.1,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-085",
+            "noise-062",
+            "noise-064",
+            "noise-036",
+            "noise-078"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-012",
+            "TSLA-20241024-news",
+            "TSLA-20241024-sec",
+            "noise-027"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-012",
+            "TSLA-20241024-news",
+            "noise-027",
+            "TSLA-20241024-sec"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-012",
+            "TSLA-20241024-news",
+            "TSLA-20241024-sec",
+            "noise-027"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "TSLA-20241106",
+      "detected": true,
+      "z_score": 2.99,
+      "pct_change": 14.8,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "noise-085",
+            "noise-097",
+            "noise-025",
+            "noise-013",
+            "noise-012"
+          ],
+          "mrr": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "hit": 0.0
+        },
+        "time_dense": {
+          "ranked": [
+            "noise-013",
+            "noise-028",
+            "TSLA-20241106-news",
+            "TSLA-20241106-ctx"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-013",
+            "noise-028",
+            "TSLA-20241106-news",
+            "TSLA-20241106-ctx"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "noise-013",
+            "noise-028",
+            "TSLA-20241106-news",
+            "TSLA-20241106-ctx"
+          ],
+          "mrr": 0.3333333333333333,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    },
+    {
+      "event_id": "TSLA-20250310",
+      "detected": true,
+      "z_score": -4.3,
+      "pct_change": -15.4,
+      "modes": {
+        "naive": {
+          "ranked": [
+            "TSLA-20250310-news",
+            "noise-097",
+            "TSLA-20250310-ctx",
+            "noise-050",
+            "noise-012"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "time_dense": {
+          "ranked": [
+            "TSLA-20250310-news",
+            "TSLA-20250310-ctx",
+            "noise-029",
+            "noise-014"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid": {
+          "ranked": [
+            "noise-029",
+            "TSLA-20250310-news",
+            "TSLA-20250310-ctx",
+            "noise-014"
+          ],
+          "mrr": 0.5,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        },
+        "hybrid_rerank": {
+          "ranked": [
+            "TSLA-20250310-news",
+            "TSLA-20250310-ctx",
+            "noise-014",
+            "noise-029"
+          ],
+          "mrr": 1.0,
+          "precision": 0.4,
+          "recall": 1.0,
+          "hit": 1.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local tooling and generated runtime state
+.streamlit/secrets.toml
+.streamlit/config.toml
+qdrant_storage/
+*.log
+
+# Local model and dataset caches
+.cache/
+data/cache/
+data/raw/**/*.zip

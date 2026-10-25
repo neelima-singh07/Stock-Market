@@ -1,0 +1,28 @@
+# Python 3.10+
+# Time series / numerics
+prophet==1.1.6
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.13.1
+yfinance==0.2.50
+
+# Retrieval
+qdrant-client==1.12.1
+sentence-transformers==3.3.1
+transformers==4.46.3
+huggingface-hub==0.26.2
+torch>=2.2,<3.0
+rank-bm25==0.2.2
+
+# LLM + schemas
+pydantic==2.10.3
+google-genai==1.5.0
+# optional alternative provider (OpenAI / Groq / etc. through LiteLLM):
+# litellm>=1.50
+
+# Data + app
+datasets==3.1.0
+streamlit==1.40.2
+plotly==5.24.1
+python-dotenv==1.0.1
+tqdm==4.67.1

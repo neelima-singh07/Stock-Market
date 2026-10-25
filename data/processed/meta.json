@@ -1,0 +1,14 @@
+{
+  "price_source": {
+    "NVDA": "yfinance",
+    "AAPL": "yfinance",
+    "TSLA": "yfinance"
+  },
+  "start": "2023-01-01",
+  "end": "2025-06-30",
+  "seed": 7,
+  "n_documents": 190,
+  "n_catalyst_docs": 30,
+  "n_noise_docs": 100,
+  "n_events": 15
+}

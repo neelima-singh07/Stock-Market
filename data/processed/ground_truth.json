@@ -1,0 +1,152 @@
+[
+  {
+    "event_id": "NVDA-20230525",
+    "ticker": "NVDA",
+    "date": "2023-05-25",
+    "expected_move_pct": 24.4,
+    "relevant_doc_ids": [
+      "NVDA-20230525-news",
+      "NVDA-20230525-sec"
+    ]
+  },
+  {
+    "event_id": "NVDA-20240523",
+    "ticker": "NVDA",
+    "date": "2024-05-23",
+    "expected_move_pct": 9.3,
+    "relevant_doc_ids": [
+      "NVDA-20240523-news",
+      "NVDA-20240523-sec"
+    ]
+  },
+  {
+    "event_id": "NVDA-20240829",
+    "ticker": "NVDA",
+    "date": "2024-08-29",
+    "expected_move_pct": -6.4,
+    "relevant_doc_ids": [
+      "NVDA-20240829-news",
+      "NVDA-20240829-sec"
+    ]
+  },
+  {
+    "event_id": "NVDA-20250127",
+    "ticker": "NVDA",
+    "date": "2025-01-27",
+    "expected_move_pct": -17.0,
+    "relevant_doc_ids": [
+      "NVDA-20250127-news",
+      "NVDA-20250127-ctx"
+    ]
+  },
+  {
+    "event_id": "NVDA-20250416",
+    "ticker": "NVDA",
+    "date": "2025-04-16",
+    "expected_move_pct": -6.9,
+    "relevant_doc_ids": [
+      "NVDA-20250416-news",
+      "NVDA-20250416-sec"
+    ]
+  },
+  {
+    "event_id": "AAPL-20230804",
+    "ticker": "AAPL",
+    "date": "2023-08-04",
+    "expected_move_pct": -4.8,
+    "relevant_doc_ids": [
+      "AAPL-20230804-news",
+      "AAPL-20230804-sec"
+    ]
+  },
+  {
+    "event_id": "AAPL-20240503",
+    "ticker": "AAPL",
+    "date": "2024-05-03",
+    "expected_move_pct": 6.0,
+    "relevant_doc_ids": [
+      "AAPL-20240503-news",
+      "AAPL-20240503-sec"
+    ]
+  },
+  {
+    "event_id": "AAPL-20240611",
+    "ticker": "AAPL",
+    "date": "2024-06-11",
+    "expected_move_pct": 7.3,
+    "relevant_doc_ids": [
+      "AAPL-20240611-news",
+      "AAPL-20240611-ctx"
+    ]
+  },
+  {
+    "event_id": "AAPL-20250403",
+    "ticker": "AAPL",
+    "date": "2025-04-03",
+    "expected_move_pct": -9.2,
+    "relevant_doc_ids": [
+      "AAPL-20250403-news",
+      "AAPL-20250403-ctx"
+    ]
+  },
+  {
+    "event_id": "AAPL-20250409",
+    "ticker": "AAPL",
+    "date": "2025-04-09",
+    "expected_move_pct": 15.3,
+    "relevant_doc_ids": [
+      "AAPL-20250409-news",
+      "AAPL-20250409-ctx"
+    ]
+  },
+  {
+    "event_id": "TSLA-20240424",
+    "ticker": "TSLA",
+    "date": "2024-04-24",
+    "expected_move_pct": 12.1,
+    "relevant_doc_ids": [
+      "TSLA-20240424-news",
+      "TSLA-20240424-sec"
+    ]
+  },
+  {
+    "event_id": "TSLA-20240724",
+    "ticker": "TSLA",
+    "date": "2024-07-24",
+    "expected_move_pct": -12.3,
+    "relevant_doc_ids": [
+      "TSLA-20240724-news",
+      "TSLA-20240724-sec"
+    ]
+  },
+  {
+    "event_id": "TSLA-20241024",
+    "ticker": "TSLA",
+    "date": "2024-10-24",
+    "expected_move_pct": 22.1,
+    "relevant_doc_ids": [
+      "TSLA-20241024-news",
+      "TSLA-20241024-sec"
+    ]
+  },
+  {
+    "event_id": "TSLA-20241106",
+    "ticker": "TSLA",
+    "date": "2024-11-06",
+    "expected_move_pct": 14.8,
+    "relevant_doc_ids": [
+      "TSLA-20241106-news",
+      "TSLA-20241106-ctx"
+    ]
+  },
+  {
+    "event_id": "TSLA-20250310",
+    "ticker": "TSLA",
+    "date": "2025-03-10",
+    "expected_move_pct": -15.4,
+    "relevant_doc_ids": [
+      "TSLA-20250310-news",
+      "TSLA-20250310-ctx"
+    ]
+  }
+]
